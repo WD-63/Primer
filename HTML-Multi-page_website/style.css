@@ -74,7 +74,7 @@ main p {
 .contact__label {
   width: 7rem;
   height: 0.3rem;
-  /* display: inline-block; */
+  display: inline-block;
 }
 
 .contact__input {
