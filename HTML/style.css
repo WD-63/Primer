@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  outline: 2px dashed rebeccapurple;
+}
+
 p {
   color: green;
 }
@@ -17,4 +22,25 @@ p {
   /* margin-block: 60px; */
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.container {
+  background-color: orange;
+  width: 20rem;
+  height: 20rem;
+  align-content: center;
+  padding: 3rem;
+  /* border: 10px solid rebeccapurple; */
+  margin: 4rem;
+  /* box-sizing: border-box; */
+}
+
+.box {
+  color: whitesmoke;
+  background-color: blue;
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+  text-align: center;
+  line-height: 5rem;
 }
