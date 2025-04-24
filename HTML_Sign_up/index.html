@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding School Sign-up Form</title>
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <header>
+      <h1>Join Our Coding School</h1>
+      <p>Fill out the form below to start your coding journey!</p>
+    </header>
+
+    <!-- Main content -->
+    <main>
+      <section>
+        <form action="#" method="get" autocomplete="on">
+          <!-- Personal Information -->
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- First Name field -->
+            <div>
+              <label for="firstname">First Name:</label><br />
+              <input
+                type="text"
+                id="firstname"
+                name="firstname"
+                placeholder="Jane"
+                required
+                autocomplete="given-name"
+              />
+            </div>
+
+            <!-- Last Name field -->
+            <div>
+              <label for="lastname">Last Name:</label><br />
+              <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                placeholder="Doe"
+                required
+                autocomplete="family-name"
+              />
+            </div>
+
+            <!-- Email field  -->
+            <div>
+              <label for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane.doe@example.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+          </fieldset>
+
+          <!-- Address Information fieldset -->
+          <fieldset>
+            <legend>Address Information</legend>
+
+            <!-- Address field -->
+            <div>
+              <label for="address">Street Address:</label><br />
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="123 Main St"
+                autocomplete="street-address"
+              />
+            </div>
+
+            <!-- Zip code field with pattern -->
+            <!-- ! title for hover and pop-up! -->
+            <div>
+              <label for="zipcode">Zip Code:</label><br />
+              <input
+                type="text"
+                id="zipcode"
+                name="zipcode"
+                placeholder="12345"
+                pattern="[0-9]{5}"
+                autocomplete="postal-code"
+                title="5-digit zip code"
+              />
+              <small>5-digit zip code</small>
+            </div>
+
+            <!-- City field -->
+            <div>
+              <label for="city">City:</label><br />
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="Anytown"
+                autocomplete="address-level2"
+              />
+            </div>
+          </fieldset>
+
+          <!-- Course Information fieldset -->
+          <fieldset>
+            <legend>Course Information</legend>
+
+            <!-- Bootcamp selection dropdown -->
+            <div>
+              <label for="bootcamp">Select Bootcamp:</label><br />
+              <select id="bootcamp" name="bootcamp" required>
+                <option value="" disabled selected>
+                  --Please choose an option--
+                </option>
+                <option value="web-dev">Web & App Development</option>
+                <option value="data-science">Data Science</option>
+                <option value="ux-design">UX/UI Design</option>
+              </select>
+            </div>
+
+            <!-- Comments textarea for additional information -->
+            <div>
+              <label for="comments">Additional Comments:</label><br />
+              <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                placeholder="Tell us about your goals and what you hope to achieve"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <!-- Study Preference fieldset with radio buttons -->
+          <fieldset>
+            <legend>Study Preference</legend>
+
+            <p>How do you learn best? Select one:</p>
+
+            <!-- ! Add value attribute because the server sends name+value (e.g., study-time=morning) -->
+            <div>
+              <input
+                type="radio"
+                id="morning"
+                name="study-time"
+                value="morning"
+                required
+              />
+              <label for="morning"
+                >Morning person (I code before coffee!)</label
+              >
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="afternoon"
+                name="study-time"
+                value="afternoon"
+              />
+              <label for="afternoon"
+                >Afternoon achiever (Peak productivity after lunch)</label
+              >
+            </div>
+
+            <div>
+              <input type="radio" id="night" name="study-time" value="night" />
+              <label for="night"
+                >Night owl (My best code happens after midnight)</label
+              >
+            </div>
+          </fieldset>
+
+          <!-- Terms and conditions checkbox -->
+          <div>
+            <label>
+              <input type="checkbox" name="terms" required />
+              I agree to the <a href="#"> terms and conditions </a>
+            </label>
+          </div>
+
+          <!-- Form submission buttons -->
+          <div>
+            <button>Submit Application</button>
+            <button type="reset">Clear Form</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer contains copyright information -->
+    <footer>
+      <p>&copy; 2025 Coding School. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact The Hobbit Hole Coffee Shop</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <p>Our Logo! ☕</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Contact Us</h1>
+      </section>
+
+      <address>
+        <ul>
+          <li><a href="mailto:info@hobbithole.com">Send an owl</a></li>
+          <li><a href="tel:74739333326">Give us a call</a></li>
+        </ul>
+      </address>
+
+      <figure>
+        <img
+          src="./assets/cozy.avif"
+          alt="A small house embedded in a grassy hill with a round wooden door"
+          width="100%"
+        />
+        <figcaption>Our cozy location under the hill</figcaption>
+      </figure>
+
+      <section class="contact">
+        <form class="contact__form">
+          <div>
+            <label class="contact__label" for="name">Your Name:</label>
+            <input class="contact__input" type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label class="contact__label" for="email">Your Email:</label>
+            <input class="contact__input" type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label class="contact__label contact__label--textarea" for="message">Your Message:</label>
+            <textarea class="contact__input" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div>
+            <button class="btn contact__btn" type="submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; The Hobbit Hole Coffee Shop, Hobbiton, The Shire</p>
+    </footer>
+  </body>
+</html>
